@@ -1,0 +1,547 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        div{
+            border-style: solid;
+            border-color: white;
+        }
+        p{
+            display: inline-block;
+        }
+
+        button{
+            background-color: rgb(240, 233, 233);
+            border-style: none;
+        }
+
+        .sidebar_and_thumbnails{
+            display: grid;
+            grid-template-columns:  175px 883px;
+            column-gap: 50px;
+        }
+        .q_zero
+        {
+            
+            display: grid;
+            grid-template-rows: 250px 250px;
+            grid-template-columns:280px 280px 280px;
+            column-gap: 20px;
+            row-gap: 20px;
+            width: 883px;
+            margin-top: 50px;
+
+        }
+        .q_first
+        {
+            width: 280px;
+            display: grid;
+            grid-template-rows: 150px 100px;
+            grid-template-columns: 280px;
+        }
+
+        .q_three
+        {
+            display: grid;
+            grid-template-rows: 100px;
+            grid-template-columns: 50px 190px 38px;
+        }
+
+        .q_five
+        {
+            display: grid;
+            grid-template-columns: 187px;
+            grid-template-rows: 55px 20px 20px;
+        }
+
+        .q_four img{
+
+            width: 30px;
+            border-radius: 100px;
+            margin-left: 5px;
+            margin-top: 7px;
+        }
+        .q_seven p{
+            display: inline-block;
+            margin: 0;
+            margin-top: 7px;
+            font-size: 14px;
+        }
+
+        .q_two img
+        {
+          width: 273px;
+          border-radius: 10px;
+        }
+        .q_eight p , .q_nine p{
+            display: inline-block;
+            margin: 0;
+            color: rgb(182, 165, 165);
+            font-size: 11px;
+       }
+       .q_eight img{
+        width: 10px;
+        border-radius: 100px;
+       }
+
+       .q_six img{
+        width: 17px;
+        margin-top: 11px;
+       }
+
+       .w_zero{
+        display: grid;
+        grid-template-columns: 175px;
+        width: 175px;
+        grid-template-rows:50px 40px 40px 40px 20px 40px 40px 40px 40px 40px 40px 40px 20px;
+       }
+       .w_first
+       {
+        display: grid;
+        grid-template-columns: 50px 125px;
+        grid-template-rows: 50px;
+       }
+       .w_first1 img{
+        width: 30px;
+        margin-top: 7px;
+        margin-left: 5px;
+       }
+
+       .w_first2 img{
+        width: 90px;
+        height: 38px;
+        margin-left: 7px;
+       }
+
+       .w_second , .w_third ,.w_fourth{
+        display: grid;
+        grid-template-columns: 50px 125px;
+        grid-template-rows: 40px;
+       }
+
+       .w_second1 img, .w_third1 img ,.w_fourth1 img{
+        width: 20px;
+        margin-left: 7px;
+       }
+
+       .w_second2 p, .w_third2 p, .w_fourth2 p{
+        display: inline-block;
+        font-size: 15px;
+        margin: 0;
+        margin-left: 7px;
+       }
+
+       .w_fifth hr{
+        width: 170px;
+        border-style: solid;
+        border-width: 1.5px;
+        border-color: rgb(204, 198, 198);
+       }
+
+       .w_sixth p{
+        margin: 0;
+        margin-left: 7px;
+       }
+   .w_s1 img,.w_t1 img, .w_f1 img{
+        width: 30px;
+        height: 30px;
+        margin-left: 7px;
+        border-radius: 100px;
+
+   }
+
+   .header_and_thumbnailpart{
+        display: grid;
+        grid-template-rows: 52px 40px 500px;
+        grid-template-columns: 885px;
+      
+   }
+
+  
+   .header {
+    display: flex;
+    justify-content: space-between; /* Pushes items to the ends */
+    align-items: center; /* Centers them vertically */
+    padding: 5px 20px; /* Adds some spacing */
+    width: 900px;
+}
+
+  .header1 , .header2{
+    flex: 1;
+    
+  }
+  .header1{
+    display: flex;
+    gap: 0;
+  }
+
+   .header2{
+    display: flex;
+    gap: 40px;
+   }
+       
+   .header1 input{
+    font-size: 12px;
+    height: 25px;
+    color: rgb(124, 120, 120);
+    width: 400px;
+    margin-top: 5px;
+    border-top-left-radius: 13px;
+    border-bottom-left-radius: 13px;
+    padding-left: 8px;
+    font-weight: bold;
+    border-style: solid;
+    border-color: rgb(124, 120, 120);
+    border-width: 1.5px;
+   }
+
+   .header1 img{
+    border-width: 1.5px;
+    margin-top: 5px;
+    height: 27px;
+    width: 33px;
+    border-style: solid;
+    border-color: rgb(124, 120, 120);
+    vertical-align: top;
+    border-style: solid;
+    border-top-right-radius: 13px;
+    border-bottom-right-radius: 13px;
+   }
+
+   .header2 img{
+    border-width: 1.5px;
+    margin-top: 5px;
+    height: 27px;
+    width: 28px;
+    border-style: solid;
+    border-color: rgb(124, 120, 120);
+    vertical-align: top;
+    border-style: solid;
+    margin-left: 40px;
+   }
+
+   .header1 button{
+   font-size: 13px;
+   background-color: rgb(223, 215, 215);
+   border-style: solid;
+   border-width: 1.5px;
+   height: 28px;
+   vertical-align: top;
+   margin-top: 5px;
+   border-radius: 20px;
+   padding-left: 9px;
+   padding-right: 12px;
+   }
+
+   .header  button p{
+    margin: 0;
+   }
+
+   .buttons{
+    display: flex;
+    gap: 20px;
+   }
+
+   .buttons button{
+    height: 25px;
+    border-radius: 7px;
+    border-style: none;
+    border-color: rgb(156, 149, 149);
+    
+   }
+   .header2 button{
+    border-radius: 18px;
+    width: 80px;
+   }
+
+   .header2 img{
+    border-style: none;
+   }
+
+   
+
+   
+    </style>
+</head>
+<body>
+
+<div class="sidebar_and_thumbnails">
+
+    <div class="w_zero">     
+        <div class="w_first">
+            <div class="w_first1"><img src="three_lines.png" alt=""></div>
+            <div class="w_first2"><img src="youtube_logo.png" alt=""></div>
+        </div>
+        <div class="w_second">
+            <div class="w_second1"><img src="home_logo.png" alt=""></div>
+            <div class="w_second2"><p>Home</p></div>
+        </div>
+        <div class="w_third">
+            <div class="w_third1"><img src="shorts_logo.png" alt=""></div>
+            <div class="w_third2"><p>Shorts</p></div>
+        </div>
+        <div class="w_fourth">
+            <div class="w_fourth1"><img src="subscription_logo.png" alt=""></div>
+            <div class="w_fourth2"><p>Subscriptions</p></div>
+        </div>
+        <div class="w_fifth"><hr></div>
+        <div class="w_sixth"><p>You ></p></div>
+        
+        <div class="w_second">
+            <div class="w_second1"><img src="history_logo.png" alt=""></div>
+            <div class="w_second2"><p>History</p></div>
+        </div>
+        <div class="w_third">
+            <div class="w_third1"><img src="playlist_logo.png" alt=""></div>
+            <div class="w_third2"><p>Playlist</p></div>
+        </div>
+        <div class="w_fourth">
+            <div class="w_fourth1"><img src="your_viodeos_logo.png" alt=""></div>
+            <div class="w_fourth2"><p>Your Videos</p></div>
+        </div>
+        <div class="w_second">
+            <div class="w_second1"><img src="your_courses_logo.png" alt=""></div>
+            <div class="w_second2"><p>Your Courses</p></div>
+        </div>
+        <div class="w_third">
+            <div class="w_third1"><img src="watch_later_logo.png" alt=""></div>
+            <div class="w_third2"><p>Watch Later</p></div>
+        </div>
+        <div class="w_fourth">
+            <div class="w_fourth1"><img src="liked_videos_logo.png" alt=""></div>
+            <div class="w_fourth2"><p>Liked Videos</p></div>
+        </div>
+        <div class="w_fifth"><hr></div>
+        <div class="w_sixth"><p>Subscriptions</p></div>
+        <div class="w_second">
+            <div class="w_s1"><img src="profile1.jpeg" alt=""></div>
+            <div class="w_second2"><p>Code with Dev</p></div>
+        </div>
+        <div class="w_third">
+            <div class="w_t1"><img src="profile2.jpeg" alt=""></div>
+            <div class="w_third2"><p>Vikramadhitya</p></div>
+        </div>
+        <div class="w_fourth">
+            <div class="w_f1"><img src="profile3.jpeg" alt=""></div>
+            <div class="w_fourth2"><p>Food On Farm</p></div>
+        </div> <div class="w_second">
+            <div class="w_s1"><img src="profile4.jpeg" alt=""></div>
+            <div class="w_second2"><p>Akella</p></div>
+        </div>
+        <div class="w_third">
+            <div class="w_t1"><img src="profile5.jpeg" alt=""></div>
+            <div class="w_third2"><p>Geeks for Geeks</p></div>
+        </div>
+        <div class="w_fourth">
+            <div class="w_f1"><img src="profile6.jpeg" alt=""></div>
+            <div class="w_fourth2"><p>Hallow Earth</p></div>
+        </div>
+    </div>
+
+
+<div class="header_and_thumbnailpart">
+   <div class="header">
+      <div class="header1">
+        <input type="text" placeholder="Search">
+        <img src="search_logo.png" alt="">
+      </div>
+
+      <div class="header2">
+        <img src="mike_logo.png" alt="">
+        <button><p> + Create</p></button>
+        <img src="notification_logo.jpeg" alt="">
+        <img src="k.png" alt="">
+
+      </div>
+    
+
+    
+</div>
+   <div class="buttons">
+
+    <button>All</button>
+    <button>Movie</button>
+    <button>Podcast</button>
+    <button>HTML</button>
+    <button>Code With Dev</button>
+    <button>Songs</button>
+    <button>Interview</button>
+    <button>Arijith Singh</button>
+    <button>Live</button>
+    <button>Mixes</button>
+    <button>Auditions</button>
+
+
+
+
+   </div>
+
+
+    <div class="q_zero">
+        <div class="q_first">
+            <div class="q_two">
+                <img src="1.png" alt="">
+            </div>
+            <div class="q_three">
+                <div class="q_four">
+                    <img src="sony.jpeg" alt="">
+                </div>
+                <div class="q_five">
+                    <div class="q_seven">
+                        <p>The caption of the channel and it was in hindi and in english.</p>
+                    </div>
+                    <div class="q_eight">
+                        <p>Sony LIV</p>
+                        <img src="tick.png" alt="">
+                    </div>
+                    <div class="q_nine">
+                        <p>228K views . 16 hours ago</p>
+                    </div>
+                </div>
+                <div class="q_six">
+                    <img src="three.png" alt="">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="q_first">
+            <div class="q_two">
+                <img src="2.png" alt="">
+            </div>
+            <div class="q_three">
+                <div class="q_four">
+                    <img src="sony.jpeg" alt="">
+                </div>
+                <div class="q_five">
+                    <div class="q_seven">
+                        <p>The caption of the channel and it was in hindi and in english.</p>
+                    </div>
+                    <div class="q_eight">
+                        <p>Sony LIV</p>
+                        <img src="tick.png" alt="">
+                    </div>
+                    <div class="q_nine">
+                        <p>228K views . 16 hours ago</p>
+                    </div>
+                </div>
+                <div class="q_six">
+                    <img src="three.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="q_first">
+            <div class="q_two">
+                <img src="3.png" alt="">
+            </div>
+            <div class="q_three">
+                <div class="q_four">
+                    <img src="sony.jpeg" alt="">
+                </div>
+                <div class="q_five">
+                    <div class="q_seven">
+                        <p>The caption of the channel and it was in hindi and in english.</p>
+                    </div>
+                    <div class="q_eight">
+                        <p>Sony LIV</p>
+                        <img src="tick.png" alt="">
+                    </div>
+                    <div class="q_nine">
+                        <p>228K views . 16 hours ago</p>
+                    </div>
+                </div>
+                <div class="q_six">
+                    <img src="three.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="q_first">
+            <div class="q_two">
+                <img src="1.png" alt="">
+            </div>
+            <div class="q_three">
+                <div class="q_four">
+                    <img src="sony.jpeg" alt="">
+                </div>
+                <div class="q_five">
+                    <div class="q_seven">
+                        <p>The caption of the channel and it was in hindi and in english.</p>
+                    </div>
+                    <div class="q_eight">
+                        <p>Sony LIV</p>
+                        <img src="tick.png" alt="">
+                    </div>
+                    <div class="q_nine">
+                        <p>228K views . 16 hours ago</p>
+                    </div>
+                </div>
+                <div class="q_six">
+                    <img src="three.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="q_first">
+            <div class="q_two">
+                <img src="2.png" alt="">
+            </div>
+            <div class="q_three">
+                <div class="q_four">
+                    <img src="sony.jpeg" alt="">
+                </div>
+                <div class="q_five">
+                    <div class="q_seven">
+                        <p>The caption of the channel and it was in hindi and in english.</p>
+                    </div>
+                    <div class="q_eight">
+                        <p>Sony LIV</p>
+                        <img src="tick.png" alt="">
+                    </div>
+                    <div class="q_nine">
+                        <p>228K views . 16 hours ago</p>
+                    </div>
+                </div>
+                <div class="q_six">
+                    <img src="three.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <div class="q_first">
+            <div class="q_two">
+                <img src="3.png" alt="">
+            </div>
+            <div class="q_three">
+                <div class="q_four">
+                    <img src="sony.jpeg" alt="">
+                </div>
+                <div class="q_five">
+                    <div class="q_seven">
+                        <p>The caption of the channel and it was in hindi and in english.</p>
+                    </div>
+                    <div class="q_eight">
+                        <p>Sony LIV</p>
+                        <img src="tick.png" alt="">
+                    </div>
+                    <div class="q_nine">
+                        <p>228K views . 16 hours ago</p>
+                    </div>
+                </div>
+                <div class="q_six">
+                    <img src="three.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div> 
+
+  </div>
+
+</div>
+</body>
+</html>
